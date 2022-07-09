@@ -1,7 +1,7 @@
 
 import {  useSelector } from 'react-redux'
 import ProductCard from './ProductCard'
-import './style/home.css'
+import './style/Home.css'
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 
