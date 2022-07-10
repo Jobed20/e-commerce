@@ -49,19 +49,16 @@
   border: 1px solid var(--border-color);
   margin-bottom: 5px;
 }
-
-
-
 .cart-info__price{
   font-weight: 700;
 }
-
 .cart-info__btn{
-  color: var(--secondary-color);
+  color: red;
   font-size: 1.2rem;
   cursor: pointer;
   margin: auto;
 }
+
 
 .cart__btn{
   display: block;
@@ -74,4 +71,4 @@
   border-radius: 8px;
   margin: 40px auto 0;
   cursor: pointer;
-} 
+}  
