@@ -1,11 +1,11 @@
 
 import {  useSelector } from 'react-redux'
 import ProductCard from './ProductCard'
-import './style/Home.css'
+import './Home.css'
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 
-const HomeScreen = () => {
+const Home = () => {
 
   const [search, setSearch] = useState()
 
@@ -63,4 +63,4 @@ const HomeScreen = () => {
   )
 }
 
-export default HomeScreen
+export default Home

@@ -1,9 +1,10 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import getConfig from '../UTIL/getConfig'
+import getConfig from '../../components/UTIL/getConfig'
+import PurchasesCard from './PurchasesCard'
+import './purchasesScreen.css'
 
-
-const PurchasesScreen = () => {
+const Purchases = () => {
 
   const [purchases, setPurchases] = useState()
 
@@ -14,11 +15,22 @@ const PurchasesScreen = () => {
       .catch(err => console.log(err))
   }, [])
 
-  console.log(purchases)
 
   return (
-    <div className="purchases">PurchasesScreen</div>
+    <div className='purchases'>
+      <h2 className='purchases__title'>My Purchases</h2>
+      <div className='purchases__container'>
+        {
+          purchases?.map(purchase => (
+            <PurchasesCard 
+              key={purchase.id}
+              purchase={purchase}
+            />
+          ))
+        }
+      </div>
+    </div>
   )
 }
 
-export default PurchasesScreen
+export default Purchases

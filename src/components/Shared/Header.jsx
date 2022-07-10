@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import './styles/header.css'
+import './header.css'
 
-const HeaderScreen = () => {
+const Header = () => {
 
   const navbar = useRef()
 
@@ -50,4 +50,4 @@ const HeaderScreen = () => {
   );
 };
 
-export default HeaderScreen;
+export default Header;

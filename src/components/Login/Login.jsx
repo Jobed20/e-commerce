@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 
 import Form from "./Form";
-import "./style/login.css"
+import "./login.css"
 import UserLogged from "./UserLogged";
 
-const LoginScreen = () => {
+const Login = () => {
 
   const [token, setToken] = useState('')
 
@@ -23,4 +23,4 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default Login;

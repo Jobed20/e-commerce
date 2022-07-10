@@ -6,7 +6,7 @@
   z-index: 40;
   position:fixed;
   width: 100%;
-  background-color: #e1f2f3;
+  background-color: #161717;
  
 }
 .header__title {
@@ -17,7 +17,7 @@
   position: relative;
   z-index: 3;
   cursor: pointer;
-  color:#010101 ;
+  color:#faf3f3 ;
 }
 .navbar{
   width: min(100%, 300px);
@@ -69,6 +69,7 @@
   .navbar-open {
     transform: translateX(0);
     transition-duration: 0ms;
+   
   }
   .navbar {
     transform: translateX(0);

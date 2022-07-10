@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom'
 import ProductInfoId from './ProductInfoId'
 import SimilarProducts from './SimilarProducts'
 import SliderImgs from './SliderImgs'
-import './style/product.css'
+import './product.css'
 
-const ProductScreen = () => {
+const Products = () => {
 
   const [product, setProduct] = useState()
   
@@ -29,4 +29,4 @@ const ProductScreen = () => {
   )
 }
 
-export default ProductScreen
+export default Products
