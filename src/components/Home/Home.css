@@ -83,10 +83,9 @@
   display:flex;
   gap:3px;
   transform: scale(1.5);
+  margin-left: 340px;
+  margin-top: -50px;
   
-  
-  padding: 5px;
-  border-radius: 15px;
 }
 
 
@@ -132,7 +131,7 @@
   font-size:20px;
 }
 
-@media screen and  (max-width: 719px){
+@media screen and  (max-width: 800px){
   .container-form{
     position: fixed;
     top: 70px;
@@ -143,6 +142,15 @@
     background-color:rgb(252, 252, 252) ;
     z-index: 2;
     height:60px;
+  }
+
+  .form-home{
+    display:flex;
+    gap:3px;
+    transform: scale(1.5);
+    margin-left: 200px;
+    margin-top: -50px;
+    
   }
 }
 
