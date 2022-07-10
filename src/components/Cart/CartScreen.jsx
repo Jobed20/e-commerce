@@ -4,20 +4,25 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setCartGlobal } from '../../store/slices/cart.slice'
 import getConfig from '../UTIL/getConfig'
 import CartInfo from './CartInfo'
-import './cart.css'
+import './style/cartScreen.css'
 
-const Cart = () => {
+const CartScreen = () => {
+
   const dispatch = useDispatch()
+
   const postPurchase = () => {
+
+    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
+
     const objPurchase = {
-      street: "Green St 1456",
+      street: "Green St. 1456",
       colony: "Southwest",
       zipCode: 12345,
       city: "USA",
-      references: "references"
+      references: "Some references"
     }
 
-    axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/purchases', objPurchase, getConfig())
+    axios.post(URL, objPurchase, getConfig())
       .then(res => {
         console.log(res.data)
         dispatch(setCartGlobal(null))
@@ -26,16 +31,20 @@ const Cart = () => {
   }
 
   const cart = useSelector(state => state.cart)
+
   console.log(cart)
 
   let totalPriceCart = 0
   if(cart) {
+
     const cb = (acc, cv) => {
       console.log(cv)
       return acc + (cv.price * cv.productsInCart.quantity)
     }
+
     totalPriceCart = cart.reduce(cb, 0)
   }
+
 
   return (
     <div className='cart'>
@@ -67,4 +76,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartScreen

@@ -4,6 +4,8 @@
 }
 .purchases__title {
   text-align: center;
+  margin-top: 150px;
+  transform: scale(2.5);
 
 }
 

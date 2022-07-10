@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { getAllProductsCart } from '../../store/slices/cart.slice'
-import getConfig from '../../components/UTIL/getConfig'
+import getConfig from '../UTIL/getConfig'
 
 const ProductCard = ({product}) => {
 
