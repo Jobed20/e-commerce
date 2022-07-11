@@ -1,18 +1,22 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import './Home.css'
 
-const InputSearch = () => {
+const InputSearch = ({setItemSearch}) => {
 
-  const {handleSubmit, register, reset} = useForm()
-
-  const submit = data => {
-    console.log(data)
-  }
+    
+    const changeForm = e => {
+        setItemSearch(e.target.value)
+    }
+    
 
   return (
-    <form onSubmit={handleSubmit(submit)} className='form-home'>
-      <input type="text" {...register('searchText')} />
-      <button>Search</button>
+    <form className='form-home' >
+            <input 
+            placeholder='Look for your Product'
+            type="text"
+            onChange={changeForm}
+             />
     </form>
   )
 }
