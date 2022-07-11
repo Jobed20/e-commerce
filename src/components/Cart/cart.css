@@ -14,6 +14,8 @@
   width: min(900px, 100%);
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    
 }
 
 .cart__container{
@@ -21,13 +23,18 @@
   display: grid;
   gap: 50px;
   
+  
 }
 
 .cart-info{
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 15px 0;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
  
+
 }
 
 .cart-info__subtitle{
@@ -62,13 +69,18 @@
 
 .cart__btn{
   display: block;
-  background-color: black;
+  background-color:#ebcb8b;
   width: min(100%, 500px);
   border: none;
-  color: white;
+  color: black;
   padding: 9px 15px;
   font-size: 1rem;
   border-radius: 8px;
   margin: 40px auto 0;
   cursor: pointer;
 }  
+
+.cart__btn:hover{
+  background-color:#ffdf9e;
+}
+

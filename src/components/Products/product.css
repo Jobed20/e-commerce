@@ -45,6 +45,7 @@
 .product-info__plus,
 .product-info__counter {
   border-left: 1px solid var(--border-color);
+  cursor: pointer;
 }
 .product-info__minus,
 .product-info__counter{
@@ -119,6 +120,13 @@
   right: 0;
 
 }
+
+.slider__prev:hover{
+  background-color: #ebcb8b;
+}
+.slider__next:hover{
+  background-color: #ebcb8b;
+}
 .puntitos-container {
   display: flex;
   gap: 40px;
@@ -135,12 +143,16 @@
   cursor: pointer;
 }
 .puntitos__active {
-  background-color: black;
+  background-color: #ebcb8b;
 }
 
 .product-info__btn{
   color:black;
 }
+.product-info__btn:hover{
+  background-color:#ebcb8b;
+}
+
 
 .similar-products__title {
   margin-bottom: 30px;

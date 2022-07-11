@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
                     <h3 className='card-product__price-label'>Price:</h3>
                     <p className='card-product__price-number'>$ {product.price}</p>
                 </div>
-                <button onClick={addToProductId} className='card__product__btn'>
+                <button onClick={addToProductId} className='card-product__btn'>
                     <i className="fa-solid fa-cart-arrow-down"></i>
                 </button>
             </div>

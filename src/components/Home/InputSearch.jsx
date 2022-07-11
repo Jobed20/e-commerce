@@ -13,7 +13,7 @@ const InputSearch = ({setItemSearch}) => {
   return (
     <form className='form-home' >
             <input 
-            placeholder='Look for your Product'
+            placeholder='What are you looking for'
             type="text"
             onChange={changeForm}
              />
